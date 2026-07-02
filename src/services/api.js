@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 // --- THE ONLY PLACE YOU EVER CHANGE THE IP ---
-export const BASE_IP = 'https://dhoobigo-dotnet-backend.onrender.com/';
+export const BASE_IP = 'dhoobigo-dotnet-backend.onrender.com';
 export const BASE_PORT = '5286';
 
-export const API_BASE_URL = `http://${BASE_IP}:${BASE_PORT}/api`;
-export const SOCKET_URL = `http://${BASE_IP}:${BASE_PORT}`;
+export const API_BASE_URL = `https://${BASE_IP}/api`;
+export const SOCKET_URL = `https://${BASE_IP}`;
 
 const api = axios.create({
   baseURL: API_BASE_URL,
